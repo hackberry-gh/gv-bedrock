@@ -14,8 +14,6 @@ module GV
       
       def start
         
-        $SAFE = 1
-        
         DRb.start_service
 
         begin
