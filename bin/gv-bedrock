@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'gv/common/cli/server'
+GV::Common::CLI::Server.gen "bedrock", %w(gv/bedrock/server gv/bedrock/config)
