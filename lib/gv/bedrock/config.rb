@@ -41,7 +41,7 @@ module GV
       end
       
       def rem key
-        @api.take([:config,key,value],0) rescue nil
+        @api.take([:config,key,nil],0) rescue nil
       end
       
       def clear
