@@ -28,9 +28,9 @@ module GV
 
         assert_equal "value", service.get("key")
 
-        refute_nil service.get("domain")        
-        refute_nil service.get("home")
-        refute_nil service.get("user")        
+        assert_equal "localhost", service.get("domain")        
+        assert_equal "/Users/onuruyar", service.get("home")
+        assert_equal "onuruyar", service.get("user")        
 
         service.clear
         # clear all services
